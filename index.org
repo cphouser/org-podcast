@@ -1,0 +1,36 @@
+
+* Episode 02: An Episode Title (Prefix will Be Excluded)
+:PROPERTIES:
+:INDEX: 2
+:BYTELENGTH: 0
+:DURATION: 0
+:END:
+30 May 2020 12:47:43 PST 
+[[url-of-this-episode-file][title]]
+
+** Notes
+This first line will be rendered as the itunes subtitle
+
+This whole section will be rendered as the itunes summary and as the description of the rss item. The episode header (a top level heading in this document) will be rendered as the episode title. If this title contains a ": ", then the portion after that substring is rendered as the title. The bytelength and duration properties must be integers corresponding to the size and duration (in seconds) of the audio file.
+
+** Links
+- [[link-url][link included in episode description]]
+- [[link-url]["Links" subheading and "Notes" subheading must be titled as such]]
+
+* An Episode Title Without a Prefix
+:PROPERTIES:
+:INDEX: 1
+:BYTELENGTH: 0
+:DURATION: 0
+:END:
+16 May 2020 12:00:00 PST
+[[direct-episode-url][title]]
+
+** Notes
+The first line after the properties drawer is the episode release time
+
+Parsing of the date string can be configured in the yaml file. The second line after the properties drawer is an org link pointed at the episode file URL. The Links Section is also added to the itunes:summary tag and description tag. The iTunes summary includes the links as raw URLs, the description includes them as titled anchor tag links nested in a CDATA tag
+
+** Links
+- [[link-url][links for episode description]]
+- [[link-url][as list]]

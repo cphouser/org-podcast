@@ -1,0 +1,37 @@
+# Config file for generating the feed.xml file
+
+org-file: index.org
+feed-path: html/feed.xml
+
+# Channel settings are top-level
+title: # Podcast Title
+link: # URL of homepage
+language: #en-us or other language code
+copyright: >
+  # license
+itunes:author: #
+managingEditor: #
+itunes:subtitle: >
+  # 255 chars max plain text only
+itunes:summary: >
+  # 4000 chars max plain text only
+description: >-
+  #
+itunes:type: # episodic or otherwise, see itunes spec
+itunes:owner:
+  name: # owner name
+  email: # owner email
+itunes:image: # url of podcast image, see itunes spec
+# up to three of these, specify subcategory with a "--"
+# *NOTE* rfeed currently only accepts one itunes category, therefore only the
+# first category is currently added to the feed.
+itunes:categories:
+  # - itunes category - see itunes spec
+itunes:explicit: #yes or no
+item:
+  itunes:episodeType: # full or episode type for each item
+  type: # audio/mpeg or appropriate format spec
+  date-format: # '%d %b %Y %H:%M:%S %Z' strftime string for parsing org file
+
+  # used in guid generation 
+  episode-digits: #2 or other integer greater than zero. 
