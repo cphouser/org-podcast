@@ -1,0 +1,14 @@
+
+* org-podcast
+
+A tiny parsing script for rendering an rss feed for a podcast based on an org-mode file. This can be used in conjunction with org-mode's HTML exporting which can render the same document as a catalog of episode notes and direct links. 
+
+** Setup
+Configuration is all done in =feed-config.yaml=. Structure of the org document is described and exampled in =index.org=. =feed-render.py= can be invoked in the same directory as feed-config.yaml without any arguments.
+
+Requires:
+- Emacs (recommended)
+- Python 3.6 or later
+- [[https://github.com/karlicoss/orgparse][orgparse]]
+- [[https://github.com/svpino/rfeed][rfeed]]
+- [[https://pyyaml.org/][pyYAML]]
